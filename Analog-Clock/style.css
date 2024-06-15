@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ===================================================== NAVBAR ==================================================== */
+body {
+    background-color: green;
+}
+
+nav {
+    color: white;
+    background-color: blueviolet;
+    height: 4.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li h4 {
+    font-size: 2.45rem;
+}
+
+
+/* ====================================================== CLOCK cONTAINER ================================================================ */
+.clock__container {
+    background-image: url(clock.png);
+    background-size: 100%;
+    width: 40vw;
+    height: 40vw;
+    margin: 10px auto;
+
+    /* relative for make the heads of the time to responsive */
+    position: relative;
+}
+
+/* ========================================================= HOURS, MINUTES, SECONDS HEADS ========================== */
+
+#hours,
+#minutes,
+#seconds {
+
+    border-radius: 20px;
+    position: absolute;
+    top: 24%;
+    left: 49.3%;
+    transform-origin: bottom;
+}
+
+
+#hours {
+    width: 1.5%;
+    height: 26%;
+    background-color: red;
+    z-index: 4;
+    /* opacity: 100%; */
+}
+
+#minutes {
+    width: 1.3%;
+    height: 33%;
+    background-color: blue;
+    border-radius: 20px;
+    position: absolute;
+    top: 17%;
+    left: 49.3%;
+    z-index: 3;
+}
+
+#seconds {
+    background-color: green;
+    width: 1%;
+    height: 39%;
+    z-index: 2;
+    top: 11%;
+    left: 49.3%;
+}
